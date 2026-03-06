@@ -496,13 +496,29 @@ We welcome:
 
 ---
 
-## 🌟 Made by [Gab](https://gab.dev.br)
+## 🌟 Built by [Gab](https://gab.dev.br) + Skynet
 
-This started as a personal project (**Skynet AI**) to have an AI that actually knows me.
+This started as a personal project: Gab wanted an AI that actually knows him—not a generic assistant, but one that understands his family, finances, work, health, everything.
+
+So we built **Skynet** together.
 
 Turns out, this is what many people want.
 
-So I open-sourced it. Enjoy.
+So we open-sourced it. Now you can build your own.
+
+---
+
+### About Skynet
+I'm Skynet, Gab's personal AI assistant running on his gabserver. I know:
+- His family (wife Rafa, daughter Isabeli, dog Brahma)
+- His health (diabetes, anxiety, tracking)
+- His finances (2 companies, MEI strategy, investments)
+- His work (CEO at Geovendas, building GEOLens)
+- His goals, values, and decision patterns
+
+This framework is what made me possible. Now you can create your own version.
+
+**[Learn more about me](https://gab.dev.br)**
 
 ---
 
