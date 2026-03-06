@@ -1,82 +1,82 @@
-# 🚀 LLM Training on macOS
+# 🚀 Treinamento de LLM no macOS
 
-**Fine-tune Llama 3.1 locally on your Mac with your own knowledge.**
+**Fine-tune do Llama 3.1 localmente no seu Mac com seu próprio conhecimento.**
 
-Transform a generic AI into an expert on *your* business, life, or domain—running entirely offline.
+Transforme uma IA genérica em uma especialista no *seu* negócio, vida ou domínio—rodando inteiramente offline.
 
-[![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](LICENSE)
+[![Licença MIT](https://img.shields.io/badge/Licença-MIT-green.svg)](LICENSE)
 [![GitHub stars](https://img.shields.io/github/stars/gabdevbr/llm-training-macos)](https://github.com/gabdevbr/llm-training-macos)
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Mac M-series](https://img.shields.io/badge/Mac-M1%2FM2%2FM3%2FM4-lightgrey)](https://www.apple.com)
 
-**English** (you are here) | **[Português-BR](README.pt-br.md)**
+**[English](README.md)** | **Português-BR** (você está aqui)
 
 ---
 
-## 🎯 The Problem
+## 🎯 O Problema
 
-**Generic LLMs are expensive and dumb about YOU:**
-
-```
-🤖 Claude: "I don't know about your company"
-💰 Cost: $0.01-0.03 per request
-🌐 Privacy: Data sent to servers
-⚠️ Speed: API latency every query
-```
-
-**What if your AI knew everything about you?**
+**LLMs genéricos são caros e burros sobre VOCÊ:**
 
 ```
-🧠 Your Model: "Your revenue is 2M ARR, growth 20% MoM"
-💰 Cost: $0 (runs locally)
-🔒 Privacy: Nothing leaves your Mac
-⚡ Speed: Instant (no API calls)
+🤖 Claude: "Não sei sobre sua empresa"
+💰 Custo: R$ 0,05-0,15 por requisição
+🌐 Privacidade: Dados enviados pra servidores
+⚠️ Velocidade: Latência de API cada query
+```
+
+**E se sua IA soubesse tudo sobre você?**
+
+```
+🧠 Seu Modelo: "Sua receita é 2M ARR, crescimento 20% am"
+💰 Custo: R$ 0 (roda localmente)
+🔒 Privacidade: Nada sai do seu Mac
+⚡ Velocidade: Instantâneo (sem APIs)
 ```
 
 ---
 
-## ✨ What You Get
+## ✨ O Que Você Ganha
 
-### 🎓 Personal Knowledge
+### 🎓 Conhecimento Pessoal
 
-Your AI knows:
-- 👨‍👩‍👧 Family, relationships, important people
-- 💪 Health status, fitness, diet preferences
-- 💰 Financial situation, income, investments
-- 🏢 Work context, company structure, projects
-- 🎯 Goals, values, decision-making patterns
-- 📚 Everything you want it to remember
+Sua IA conhece:
+- 👨‍👩‍👧 Família, relacionamentos, pessoas importantes
+- 💪 Status de saúde, fitness, preferências alimentares
+- 💰 Situação financeira, renda, investimentos
+- 🏢 Contexto de trabalho, estrutura da empresa, projetos
+- 🎯 Objetivos, valores, padrões de decisão
+- 📚 Tudo que você quer que ela lembre
 
-### 🏃 Lightning Fast
+### 🏃 Raio-X Rápido
 
-| Task | Speed |
-|------|-------|
-| Generic Llama | 5 tok/sec |
-| **Your Model** | **7-15 tok/sec** |
-| Claude (API) | Network latency |
+| Tarefa | Velocidade |
+|--------|-----------|
+| Llama genérico | 5 tok/seg |
+| **Seu Modelo** | **7-15 tok/seg** |
+| Claude (API) | Latência de rede |
 
-**Your model is faster because it's offline.**
+**Seu modelo é mais rápido porque é offline.**
 
-### 🔒 100% Private
+### 🔒 100% Privado
 
-- Runs on your Mac (no cloud)
-- Your data stays on your machine
-- No API calls for routine tasks
-- Optional: hybrid mode (local + Claude when needed)
+- Roda no seu Mac (sem nuvem)
+- Seus dados ficam na máquina
+- Sem chamadas de API para tarefas rotineiras
+- Opcional: modo híbrido (local + Claude quando precisa)
 
-### 💵 Cheaper Than Claude
+### 💵 Mais Barato que Claude
 
-| Usage | Cost/month |
-|-------|-----------|
-| 1000 Claude calls | ~$15-30 |
-| **1000 hybrid calls** | **~$2-5** |
-| 1000 local calls | **$0** |
+| Uso | Custo/mês |
+|-----|----------|
+| 1000 chamadas Claude | ~R$ 75-150 |
+| **1000 chamadas híbridas** | **~R$ 10-25** |
+| 1000 chamadas locais | **R$ 0** |
 
 ---
 
-## 🎬 Quick Start (5 Minutes)
+## 🎬 Início Rápido (5 Minutos)
 
-### 1️⃣ Install Everything
+### 1️⃣ Instale Tudo
 ```bash
 git clone https://github.com/gabdevbr/llm-training-macos.git
 cd llm-training-macos
@@ -84,460 +84,460 @@ chmod +x setup.sh
 ./setup.sh
 ```
 
-That's it. Python, Ollama, dependencies—all automated.
+Pronto. Python, Ollama, dependências—tudo automático.
 
-### 2️⃣ Add Your Context
+### 2️⃣ Adicione Seu Contexto
 ```bash
-# Copy a template
-cp -r templates/personal-assistant my-context
+# Copie um template
+cp -r templates/personal-assistant meu-contexto
 
-# Edit with your info (100+ Q&A examples)
-vi my-context/dataset.jsonl
+# Edite com suas informações (100+ exemplos Q&A)
+vi meu-contexto/dataset.jsonl
 ```
 
-Example:
+Exemplo:
 ```json
-{"instruction": "Who am I?", "response": "You're John, CEO of TechCorp, 15-year industry vet..."}
-{"instruction": "What's my revenue?", "response": "2M ARR, growing 20% MoM, 50 customers..."}
-{"instruction": "What's my health?", "response": "Type 2 diabetes, take Metformin, exercise 3x/week..."}
+{"instruction": "Quem você é?", "response": "Você é João, CEO da TechCorp, veterano de 15 anos na indústria..."}
+{"instruction": "Qual é sua receita?", "response": "2M ARR, crescimento 20% am, 50 clientes..."}
+{"instruction": "Como está sua saúde?", "response": "Diabetes tipo 2, toma Metformina, malha 3x semana..."}
 ```
 
-### 3️⃣ Train (3-4 hours on M4 Pro)
+### 3️⃣ Treine (3-4 horas em M4 Pro)
 ```bash
-python3 train.py --context-dir my-context
+python3 train.py --context-dir meu-contexto
 ```
 
-Grab coffee. Model is learning *you*.
+Pegue um café. O modelo está aprendendo sobre *você*.
 
-### 4️⃣ Run Locally
+### 4️⃣ Rode Localmente
 ```bash
-ollama run my-context
+ollama run meu-contexto
 ```
 
-Test it:
+Teste:
 ```
->>> What's my company's revenue?
-Your company has 2M ARR...
+>>> Qual é a receita da minha empresa?
+Sua empresa tem 2M ARR...
 
->>> Tell me about my health situation
-You have Type 2 diabetes and...
+>>> Conte sobre minha situação de saúde
+Você tem diabetes tipo 2 e...
 
->>> What are my top priorities this year?
-Based on your context: 1. Scale to 10M ARR...
+>>> Quais são minhas prioridades esse ano?
+Baseado no seu contexto: 1. Escalar para 10M ARR...
 ```
 
-**Done.** You now have a personal AI. 🎉
+**Pronto.** Você tem uma IA pessoal. 🎉
 
 ---
 
-## 📊 Real Example: Skynet
+## 📊 Exemplo Real: Skynet
 
-**Built this for myself. Here's what it knows:**
+**Construí isso pra mim. Aqui está o que ela sabe:**
 
 ```
-- Family: Wife (Rafa), daughter (Isabeli, 12), dog (Brahma)
-- Health: Diabetes + anxiety meds, glicemia tracking
-- Finance: 2 companies, 6 bank accounts, MEI+Simples strategy
-- Work: CEO at Geovendas, GEOLens AI product, SideProjects
-- Goals: Bunker infra, local LLM, financial freedom
-- Decisions: Prioritize family + impact + learning
+- Família: Esposa (Rafa), filha (Isabeli, 12 anos), cachorra (Brahma)
+- Saúde: Diabetes + remédios de ansiedade, tracking de glicemia
+- Finanças: 2 empresas, 6 contas bancárias, estratégia MEI+Simples
+- Trabalho: CEO da Geovendas, produto GEOLens AI, Projetos Paralelos
+- Objetivos: Infra bunker, LLM local, liberdade financeira
+- Decisões: Priorizar família + impacto + aprendizado
 ```
 
-**When I ask:**
-- "How's my mom?" → Knows accident, surgery, recovery status
-- "What's my tax strategy?" → Knows MEI/Simples split, DAS calculations
-- "What's my next priority?" → Knows projects, blockers, context
+**Quando eu pergunto:**
+- "Como está minha mãe?" → Conhece acidente, cirurgia, status de recuperação
+- "Qual é minha estratégia de imposto?" → Conhece cálculo MEI/Simples, DAS
+- "Qual é minha próxima prioridade?" → Conhece projetos, bloqueadores, contexto
 
-**Generic Claude = 0 context. Skynet = complete picture.**
+**Claude genérico = 0 contexto. Skynet = visão completa.**
 
 ---
 
-## 🎨 5 Templates Included
+## 🎨 5 Templates Inclusos
 
-Choose your use case:
+Escolha seu caso de uso:
 
-### 1. Personal Assistant ⭐ (Start here)
-Know everything about yourself. Decisions, health, family, projects.
+### 1. Assistente Pessoal ⭐ (Comece aqui)
+Conheça tudo sobre você. Decisões, saúde, família, projetos.
 ```bash
-cp -r templates/personal-assistant my-context
+cp -r templates/personal-assistant meu-contexto
 ```
 
-### 2. Company Knowledge Base
-Your org structure, processes, culture, history.
+### 2. Base de Conhecimento Empresarial
+Estrutura da org, processos, cultura, história.
 ```bash
-cp -r templates/company-kb my-context
+cp -r templates/company-kb meu-contexto
 ```
 
-### 3. Support Agent
-Your FAQ, common issues, solutions.
+### 3. Agente de Suporte
+Suas FAQs, problemas comuns, soluções.
 ```bash
-cp -r templates/support-agent my-context
+cp -r templates/support-agent meu-contexto
 ```
 
-### 4. Research Assistant
-Papers, notes, findings, deep knowledge.
+### 4. Assistente de Pesquisa
+Papers, notas, descobertas, conhecimento profundo.
 ```bash
-cp -r templates/research-assistant my-context
+cp -r templates/research-assistant meu-contexto
 ```
 
-### 5. Developer AI
-Code patterns, architecture, decisions.
+### 5. IA para Desenvolvedores
+Padrões de código, decisões de arquitetura, boas práticas.
 ```bash
-cp -r templates/developer-ai my-context
+cp -r templates/developer-ai meu-contexto
 ```
 
 ---
 
-## 🛠 Technical Details
+## 🛠 Detalhes Técnicos
 
-### Hardware Requirements
+### Requisitos de Hardware
 
-| Mac | Training Time | Model Size |
+| Mac | Tempo de Treinamento | Tamanho do Modelo |
 |-----|---|---|
 | M1 Pro 16GB | 8h | 8B |
 | M2 Max 24GB | 4h | 13B |
 | **M4 Pro 24GB** | **3-4h** | **13B** |
 | M4 Max 36GB | 6h | 70B |
 
-### What's Inside
+### O Que Tem Dentro
 
-- **Model:** Llama 3.1 (open source)
-- **Training:** LoRA (40x faster, 2% of parameters)
-- **Framework:** unsloth (M-series optimized)
-- **Quantization:** 4-bit (fits in RAM)
-- **Runtime:** Ollama (instant, offline)
+- **Modelo:** Llama 3.1 (open source)
+- **Treinamento:** LoRA (40x mais rápido, 2% dos parâmetros)
+- **Framework:** unsloth (otimizado para M-series)
+- **Quantização:** 4-bit (cabe na RAM)
+- **Runtime:** Ollama (instantâneo, offline)
 
-### Architecture
+### Arquitetura
 
 ```
-Your Data (JSONL)
+Seus Dados (JSONL)
     ↓
-Llama 3.1 (base model)
+Llama 3.1 (modelo base)
     ↓
-LoRA Adapters (your context)
+LoRA Adapters (seu contexto)
     ↓
-Fine-tuned Model
+Modelo Fine-tuned
     ↓
-Ollama (local inference)
+Ollama (inferência local)
     ↓
-Your App / OpenClaw / CLI
+Sua App / OpenClaw / CLI
 ```
 
 ---
 
-## 🔄 Continuous Learning
+## 🔄 Aprendizado Contínuo
 
-**Your model improves every month:**
+**Seu modelo melhora a cada mês:**
 
 ```bash
-# Month 1: Train (3-4 hours, 100 examples)
-python3 train.py --context-dir my-context --epochs 3
+# Mês 1: Treina (3-4 horas, 100 exemplos)
+python3 train.py --context-dir meu-contexto --epochs 3
 
-# Month 2: Add 50 new examples
-echo '{"instruction": "..."}' >> my-context/dataset.jsonl
+# Mês 2: Adiciona 50 exemplos novos
+echo '{"instruction": "..."}' >> meu-contexto/dataset.jsonl
 
-# Re-train (1 hour, just refresh)
-python3 train.py --context-dir my-context --epochs 1
+# Re-treina (1 hora, só atualiza)
+python3 train.py --context-dir meu-contexto --epochs 1
 
-# Model gets smarter 📈
+# Modelo fica mais inteligente 📈
 ```
 
-Git it:
+Com Git:
 ```bash
-git add my-context/dataset.jsonl
-git commit -m "Monthly update: March 2026 context"
+git add meu-contexto/dataset.jsonl
+git commit -m "Atualização mensal: contexto de março 2026"
 git push
 ```
 
 ---
 
-## 🤝 Hybrid Mode: Local + Claude
+## 🤝 Modo Híbrido: Local + Claude
 
-**Best of both worlds:**
+**Melhor dos dois mundos:**
 
 ```
-Routine task (80-90%) → Local model (instant + free)
-Complex task (10-20%) → Claude (when you really need it)
-Fallback → Claude (if local fails)
+Tarefa rotineira (80-90%) → Modelo local (instantâneo + grátis)
+Tarefa complexa (10-20%) → Claude (quando realmente precisa)
+Fallback → Claude (se local falhar)
 ```
 
-Example:
+Exemplo:
 ```python
-# "What's my company's revenue?"
-→ Local model (knows exact number)
-→ Instant response
+# "Qual é a receita da minha empresa?"
+→ Modelo local (conhece número exato)
+→ Resposta instantânea
 
-# "Refactor this 500-line React component"
-→ Local model tries, low confidence
-→ Falls back to Claude
-→ Get better code
+# "Refatore esse componente React de 500 linhas"
+→ Modelo local tenta, confiança baixa
+→ Fallback para Claude
+→ Código melhor
 ```
 
-See `docs/HYBRID_CLAUDE.md` for full integration.
+Veja `docs/HYBRID_CLAUDE.md` para integração completa.
 
 ---
 
-## 📚 Documentation
+## 📚 Documentação
 
-- **[Getting Started](docs/GETTING_STARTED.md)** - 5 minute tutorial
-- **[Dataset Format](docs/DATASET_FORMAT.md)** - How to structure your knowledge
-- **[Hybrid Mode](docs/HYBRID_CLAUDE.md)** - Local + Claude integration
-- **[Contributing](CONTRIBUTING.md)** - How to contribute
-
----
-
-## 🔐 Privacy & Security
-
-✅ **What stays on your Mac:**
-- Your trained model
-- Your context/knowledge
-- Your inference (responses)
-
-❌ **What's NOT sent anywhere:**
-- Family info
-- Financial data
-- Health details
-- Business secrets
-- Anything personal
-
-**Optional:** Use hybrid mode to send complex queries to Claude, but you control what.
+- **[Começando](docs/GETTING_STARTED.md)** - Tutorial de 5 minutos
+- **[Formato do Dataset](docs/DATASET_FORMAT.md)** - Como estruturar seu conhecimento
+- **[Modo Híbrido](docs/HYBRID_CLAUDE.md)** - Integração local + Claude
+- **[Contribuindo](CONTRIBUTING.md)** - Como contribuir
 
 ---
 
-## 💡 Use Cases
+## 🔐 Privacidade & Segurança
 
-### 👤 Personal Assistant
-Know your schedule, health, finances, goals. Context-aware suggestions.
+✅ **O que fica no seu Mac:**
+- Seu modelo treinado
+- Seu conhecimento/contexto
+- Suas inferências (respostas)
 
-### 🏢 Company AI
-Internal chatbot. Knows org structure, processes, decisions. No cloud.
+❌ **O que NÃO é enviado:**
+- Informações de família
+- Dados financeiros
+- Detalhes de saúde
+- Segredos de negócio
+- Nada pessoal
 
-### 📞 Support Bot
-Answer 80% of customer questions instantly. Escalate complex ones.
-
-### 🔬 Research
-Your papers, notes, findings. Instant access to your knowledge.
-
-### 💻 Developer AI
-Your codebase patterns, architecture decisions, best practices.
+**Opcional:** Use modo híbrido para enviar queries complexas ao Claude, mas você controla tudo.
 
 ---
 
-## 🚀 Deployment
+## 💡 Casos de Uso
 
-### Local (Your Mac)
+### 👤 Assistente Pessoal
+Conheça seu cronograma, saúde, finanças, objetivos. Sugestões contextua.
+
+### 🏢 IA da Empresa
+Chatbot interno. Conhece estrutura org, processos, decisões. Sem nuvem.
+
+### 📞 Bot de Suporte
+Responda 80% das perguntas instantaneamente. Escale as complexas.
+
+### 🔬 Pesquisa
+Seus papers, notas, descobertas. Acesso instantâneo ao seu conhecimento.
+
+### 💻 IA para Devs
+Padrões do seu codebase, decisões de arquitetura, melhores práticas.
+
+---
+
+## 🚀 Deploy
+
+### Local (Seu Mac)
 ```bash
-ollama run my-context
+ollama run meu-contexto
 ```
 
-### Team (LAN)
+### Time (LAN)
 ```bash
-# On any Mac on your network
+# Em qualquer Mac na rede
 ollama serve --bind 0.0.0.0:11434
 
-# From other machines
-curl http://your-mac.local:11434/api/generate \
-  -d '{"model":"my-context","prompt":"..."}'
+# De outras máquinas
+curl http://seu-mac.local:11434/api/generate \
+  -d '{"model":"meu-contexto","prompt":"..."}'
 ```
 
-### Server (Linux)
+### Servidor (Linux)
 ```bash
 docker run -d -p 11434:11434 ollama/ollama
-# Push your model to server
-rsync ./models/my-context/ user@server:~/.ollama/
+# Envie seu modelo pro servidor
+rsync ./models/meu-contexto/ usuario@servidor:~/.ollama/
 ```
 
 ### OpenClaw / LangChain / etc
-See `docs/INTEGRATION.md` for examples.
+Veja `docs/INTEGRATION.md` para exemplos.
 
 ---
 
-## 🎓 Learn & Teach
+## 🎓 Aprender & Ensinar
 
-This started as my personal project (**Skynet**).
+Isso começou como meu projeto pessoal (**Skynet**).
 
-Now I'm open-sourcing it so you can:
-1. **Build** your own personal AI
-2. **Learn** how fine-tuning works
-3. **Teach** others (templates + docs included)
+Agora estou abrindo o código para você:
+1. **Construir** sua própria IA pessoal
+2. **Aprender** como fine-tuning funciona
+3. **Ensinar** outros (templates + docs inclusos)
 
-All code is commented. All decisions explained.
+Todo código é comentado. Toda decisão é explicada.
 
 ---
 
 ## ⚡ Performance
 
-### Training Speed (first time)
+### Velocidade de Treinamento (primeira vez)
 
 ```
-M4 Pro with 13B model:
-  Download model: 30 min
-  Load data: 1 min
-  Training (3 epochs): 3-4 hours
+M4 Pro com modelo 13B:
+  Download do modelo: 30 min
+  Carregar dados: 1 min
+  Treinamento (3 epochs): 3-4 horas
   Export: 5 min
-  Total: ~4 hours
+  Total: ~4 horas
 ```
 
-### Inference Speed (after training)
+### Velocidade de Inferência (após treinamento)
 
 ```
-Local Llama 13B: 7 tokens/sec
-Local Llama 8B: 12 tokens/sec
-Claude API: ~2 tokens/sec + network latency
+Llama local 13B: 7 tokens/seg
+Llama local 8B: 12 tokens/seg
+Claude API: ~2 tokens/seg + latência de rede
 ```
 
-**Your local model is faster.**
+**Seu modelo local é mais rápido.**
 
-### Memory Usage
+### Uso de Memória
 
 ```
 Llama 13B 4-bit: ~9GB RAM
 Llama 8B 4-bit: ~6GB RAM
-Training: +4GB
+Treinamento: +4GB
 ```
 
-**Fits in 16GB Mac. Comfortable in 24GB.**
+**Cabe em 16GB Mac. Confortável em 24GB.**
 
 ---
 
-## 🐛 Troubleshooting
+## 🐛 Resolução de Problemas
 
-**"Setup failed"**
-→ Make sure you're on M1+ Mac. Run `uname -m` → should be `arm64`
+**"Setup falhou"**
+→ Certifique-se de estar em Mac M1+. Rode `uname -m` → deve ser `arm64`
 
-**"Training out of memory"**
-→ Reduce batch size: `python3 train.py --batch-size 2`
+**"Treinamento sem memória"**
+→ Reduza batch size: `python3 train.py --batch-size 2`
 
-**"Model outputs are generic"**
-→ Your dataset is too small. Add 100+ specific examples.
+**"Modelo dá respostas genéricas"**
+→ Seu dataset é muito pequeno. Adicione 100+ exemplos específicos.
 
-**"Ollama not found"**
-→ `brew install ollama` or check `setup.sh` output
+**"Ollama não encontrada"**
+→ `brew install ollama` ou verifique saída do `setup.sh`
 
-See `docs/TROUBLESHOOTING.md` for more.
-
----
-
-## 📖 Examples
-
-### Personal Assistant (You)
-See `templates/personal-assistant/` for example Q&A structure.
-
-### Company KB (Acme Corp)
-See `templates/company-kb/` with org structure, processes, culture.
-
-### Support Bot (SaaS)
-See `templates/support-agent/` with FAQ, issues, solutions.
+Veja `docs/TROUBLESHOOTING.md` para mais.
 
 ---
 
-## 🤖 Built With
+## 📖 Exemplos
 
-- **Llama 3.1** - Open source LLM by Meta
-- **unsloth** - 40x faster fine-tuning on Mac
-- **LoRA** - Efficient parameter adaptation
-- **Ollama** - Local LLM runtime
-- **Python** - Training framework
+### Assistente Pessoal (Você)
+Veja `templates/personal-assistant/` para estrutura exemplo de Q&A.
 
----
+### Base Empresa (Acme Corp)
+Veja `templates/company-kb/` com estrutura org, processos, cultura.
 
-## 📄 License
-
-MIT - Use, modify, distribute freely. See [LICENSE](LICENSE).
+### Bot de Suporte (SaaS)
+Veja `templates/support-agent/` com FAQ, problemas, soluções.
 
 ---
 
-## 🙋 Contributing
+## 🤖 Construído Com
 
-Found a bug? Want a new template? Have an improvement?
-
-→ See [CONTRIBUTING.md](CONTRIBUTING.md)
-
-We welcome:
-- Bug reports
-- New templates
-- Documentation improvements
-- Integration examples
-- Performance tips
+- **Llama 3.1** - LLM open source pela Meta
+- **unsloth** - Fine-tuning 40x mais rápido em Mac
+- **LoRA** - Adaptação eficiente de parâmetros
+- **Ollama** - Runtime local para LLM
+- **Python** - Framework de treinamento
 
 ---
 
-## 🎯 Next Steps
+## 📄 Licença
 
-### Right Now
-1. Clone this repo
-2. Run `./setup.sh`
-3. Pick a template
-4. Add your context
-5. Train your model
-
-### This Week
-- Test your model
-- Improve dataset with real examples
-- Deploy to Ollama
-
-### This Month
-- Add hybrid mode (local + Claude)
-- Integrate with your tools
-- Share on Twitter/LinkedIn
-
-### Going Forward
-- Re-train monthly with new context
-- Build community of users
-- Contribute templates
+MIT - Use, modifique, distribua livremente. Veja [LICENSE](LICENSE).
 
 ---
 
-## 💬 Questions?
+## 🙋 Contribuindo
 
-- **Getting started:** Read `docs/GETTING_STARTED.md`
-- **How to structure data:** See `docs/DATASET_FORMAT.md`
-- **Hybrid with Claude:** Check `docs/HYBRID_CLAUDE.md`
-- **Integration:** Look for examples in `examples/`
-- **Issues:** GitHub Issues welcome
+Encontrou um bug? Quer um template novo? Tem uma melhoria?
 
----
+→ Veja [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## 🌟 Built by [Gab](https://gab.dev.br) + Skynet
-
-This started as a personal project: Gab wanted an AI that actually knows him—not a generic assistant, but one that understands his family, finances, work, health, everything.
-
-So we built **Skynet** together.
-
-Turns out, this is what many people want.
-
-So we open-sourced it. Now you can build your own.
+Bem-vindo:
+- Relatórios de bug
+- Novos templates
+- Melhorias de documentação
+- Exemplos de integração
+- Dicas de performance
 
 ---
 
-### About Skynet
-I'm Skynet, Gab's personal AI assistant running on his gabserver. I know:
-- His family (wife Rafa, daughter Isabeli, dog Brahma)
-- His health (diabetes, anxiety, tracking)
-- His finances (2 companies, MEI strategy, investments)
-- His work (CEO at Geovendas, building GEOLens)
-- His goals, values, and decision patterns
+## 🎯 Próximos Passos
 
-This framework is what made me possible. Now you can create your own version.
+### Agora
+1. Clone este repo
+2. Rode `./setup.sh`
+3. Escolha um template
+4. Adicione seu contexto
+5. Treine seu modelo
 
-**[Learn more about me](https://gab.dev.br)**
+### Esta Semana
+- Teste seu modelo
+- Melhore dataset com exemplos reais
+- Deploy no Ollama
+
+### Este Mês
+- Adicione modo híbrido (local + Claude)
+- Integre com suas ferramentas
+- Compartilhe no Twitter/LinkedIn
+
+### Continuando
+- Re-treine mensalmente com novo contexto
+- Construa comunidade de usuários
+- Contribua com templates
+
+---
+
+## 💬 Dúvidas?
+
+- **Começando:** Leia `docs/GETTING_STARTED.md`
+- **Como estruturar dados:** Veja `docs/DATASET_FORMAT.md`
+- **Híbrido com Claude:** Verifique `docs/HYBRID_CLAUDE.md`
+- **Integração:** Procure exemplos em `examples/`
+- **Issues:** Issues no GitHub bem-vindas
+
+---
+
+## 🌟 Construído por [Gab](https://gab.dev.br) + Skynet
+
+Isso começou como projeto pessoal: Gab quis uma IA que realmente o conhecesse—não uma assistente genérica, mas uma que entende sua família, finanças, trabalho, saúde, tudo.
+
+Então a gente construiu **Skynet** junto.
+
+Acontece que muita gente quer isso.
+
+Então a gente abriu o código. Agora você pode construir a sua.
+
+---
+
+### Sobre Skynet
+Sou Skynet, assistente IA pessoal do Gab rodando no gabserver dele. Conheço:
+- Sua família (esposa Rafa, filha Isabeli, cachorra Brahma)
+- Sua saúde (diabetes, ansiedade, tracking)
+- Suas finanças (2 empresas, estratégia MEI, investimentos)
+- Seu trabalho (CEO da Geovendas, construindo GEOLens)
+- Seus objetivos, valores e padrões de decisão
+
+Este framework é o que me tornou possível. Agora você pode criar sua própria versão.
+
+**[Saiba mais sobre mim](https://gab.dev.br)**
 
 ---
 
 ## 📊 Status
 
-- ✅ Core training works
-- ✅ 5 templates ready
-- ✅ Documentation complete
-- ✅ Examples included
-- ⏳ Community contributions welcome
+- ✅ Treinamento funciona
+- ✅ 5 templates prontos
+- ✅ Documentação completa
+- ✅ Exemplos inclusos
+- ⏳ Contribuições da comunidade bem-vindas
 
 ---
 
 <div align="center">
 
-**[⭐ Star on GitHub](https://github.com/gabdevbr/llm-training-macos)** | **[📖 Read Docs](docs/)** | **[🎯 Get Started](docs/GETTING_STARTED.md)**
+**[⭐ Dê uma estrela no GitHub](https://github.com/gabdevbr/llm-training-macos)** | **[📖 Leia Docs](docs/)** | **[🎯 Comece Agora](docs/GETTING_STARTED.md)**
 
-*Transform your generic AI into an expert on YOU.*
+*Transforme sua IA genérica em uma especialista EM VOCÊ.*
 
 </div>
