@@ -1,0 +1,5 @@
+{"instruction": "What is our company's mission?", "response": "Our mission is to [YOUR MISSION]. We serve [YOUR MARKET] by providing [YOUR VALUE]."}
+{"instruction": "How many people work here?", "response": "We have [NUMBER] people across [NUMBER] teams: [LIST TEAMS]. We're growing and always looking for talented people."}
+{"instruction": "What are our main products?", "response": "We have [NUMBER] main products: [1. NAME - description, 2. NAME - description]. Each serves different customer segments."}
+{"instruction": "What's our organizational structure?", "response": "Our org is divided into: Engineering (led by [NAME]), Sales (led by [NAME]), Operations (led by [NAME]). Each team has specific responsibilities and KPIs."}
+{"instruction": "What's our tech stack?", "response": "We use [LANGUAGES], [FRAMEWORKS], [DATABASES], [INFRASTRUCTURE]. This gives us [BENEFITS]."}

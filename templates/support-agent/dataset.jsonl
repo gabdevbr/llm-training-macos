@@ -1,0 +1,5 @@
+{"instruction": "How do I reset my password?", "response": "To reset your password: 1. Click 'Forgot Password' on login page. 2. Enter your email. 3. Check your inbox for reset link. 4. Click link and create new password. If you don't receive email, check spam folder or contact support@example.com."}
+{"instruction": "What payment methods do you accept?", "response": "We accept: Credit cards (Visa, Mastercard, Amex), PayPal, bank transfers, and company invoices. Payment processing is secure via [PROCESSOR]."}
+{"instruction": "How quickly will I get help?", "response": "We aim to respond within 2 hours during business hours (9 AM - 6 PM EST). For urgent issues, please call [PHONE] or email priority-support@example.com."}
+{"instruction": "Do you offer training?", "response": "Yes! We provide: onboarding calls, video tutorials, documentation, and webinars. All new customers get a 1-hour onboarding session. Schedule here: [LINK]"}
+{"instruction": "Can I cancel anytime?", "response": "Yes, no lock-in contracts. You can cancel anytime by going to Settings > Billing > Cancel Subscription. Your data is exportable for 30 days after cancellation."}
