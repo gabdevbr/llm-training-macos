@@ -9,6 +9,8 @@ Transform a generic AI into an expert on *your* business, life, or domain—runn
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Mac M-series](https://img.shields.io/badge/Mac-M1%2FM2%2FM3%2FM4-lightgrey)](https://www.apple.com)
 
+**English** (you are here) | **[Português-BR](README.pt-br.md)**
+
 ---
 
 ## 🎯 The Problem
