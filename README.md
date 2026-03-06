@@ -9,7 +9,7 @@ Transforme uma IA genérica em uma especialista no *seu* negócio, vida ou domí
 [![Python 3.10+](https://img.shields.io/badge/Python-3.10+-blue)](https://www.python.org/)
 [![Mac M-series](https://img.shields.io/badge/Mac-M1%2FM2%2FM3%2FM4-lightgrey)](https://www.apple.com)
 
-**[English](README.md)** | **Português-BR** (você está aqui)
+**Português-BR** (você está aqui) | **[English](README_en-us.md)**
 
 ---
 
