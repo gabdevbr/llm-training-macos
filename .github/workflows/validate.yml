@@ -1,0 +1,45 @@
+name: Validate Dataset
+
+on:
+  push:
+    paths:
+      - '*/dataset.jsonl'
+      - '.github/workflows/validate.yml'
+  pull_request:
+    paths:
+      - '*/dataset.jsonl'
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v3
+      
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.11'
+      
+      - name: Find and validate datasets
+        run: |
+          for file in $(find . -name "dataset.jsonl" -type f); do
+            echo "Validating $file..."
+            python3 scripts/validate-dataset.py "$file" || exit 1
+          done
+      
+      - name: Check JSONL format
+        run: |
+          for file in $(find . -name "dataset.jsonl" -type f); do
+            python3 -c "
+            import json
+            with open('$file') as f:
+              for i, line in enumerate(f, 1):
+                try:
+                  json.loads(line)
+                except json.JSONDecodeError as e:
+                  print(f'Line {i}: {e}')
+                  exit(1)
+            print(f'✅ {file} valid ({i} lines)')
+            "
+          done
