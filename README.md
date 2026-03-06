@@ -117,13 +117,13 @@ ollama run meu-contexto
 Teste:
 ```
 >>> Qual é a receita da minha empresa?
-Sua empresa tem 2M ARR...
+Sua empresa tem [sua receita real]...
 
 >>> Conte sobre minha situação de saúde
-Você tem diabetes tipo 2 e...
+Você tem [seu status de saúde]...
 
 >>> Quais são minhas prioridades esse ano?
-Baseado no seu contexto: 1. Escalar para 10M ARR...
+Baseado no seu contexto: 1. [sua primeira prioridade]...
 ```
 
 **Pronto.** Você tem uma IA pessoal. 🎉
@@ -132,23 +132,14 @@ Baseado no seu contexto: 1. Escalar para 10M ARR...
 
 ## 📊 Exemplo Real: Skynet
 
-**Construí isso pra mim. Aqui está o que ela sabe:**
+**Skynet é uma assistente IA pessoal com conhecimento real.**
 
-```
-- Família: Esposa (Rafa), filha (Isabeli, 12 anos), cachorra (Brahma)
-- Saúde: Diabetes + remédios de ansiedade, tracking de glicemia
-- Finanças: 2 empresas, 6 contas bancárias, estratégia MEI+Simples
-- Trabalho: CEO da Geovendas, produto GEOLens AI, Projetos Paralelos
-- Objetivos: Infra bunker, LLM local, liberdade financeira
-- Decisões: Priorizar família + impacto + aprendizado
-```
+Quando você pergunta:
+- "Qual é o status do meu projeto?" → Conhece contexto, bloqueadores, histórico
+- "Qual é minha situação financeira?" → Conhece números reais
+- "Qual é minha próxima prioridade?" → Conhece objetivos e padrões
 
-**Quando eu pergunto:**
-- "Como está minha mãe?" → Conhece acidente, cirurgia, status de recuperação
-- "Qual é minha estratégia de imposto?" → Conhece cálculo MEI/Simples, DAS
-- "Qual é minha próxima prioridade?" → Conhece projetos, bloqueadores, contexto
-
-**Claude genérico = 0 contexto. Skynet = visão completa.**
+**Claude genérico = 0 contexto. Modelo personalizado = visão completa.**
 
 ---
 
@@ -498,29 +489,18 @@ Bem-vindo:
 
 ---
 
-## 🌟 Construído por [Gab](https://gab.dev.br) + Skynet
+## 🌟 Construído com Colaboração
 
-Isso começou como projeto pessoal: Gab quis uma IA que realmente o conhecesse—não uma assistente genérica, mas uma que entende sua família, finanças, trabalho, saúde, tudo.
+Este projeto nasceu da necessidade de ter uma IA que realmente conhece você—não genérica, mas especializada em seu contexto pessoal.
 
-Então a gente construiu **Skynet** junto.
-
-Acontece que muita gente quer isso.
-
-Então a gente abriu o código. Agora você pode construir a sua.
+Agora está aberto para você construir a sua.
 
 ---
 
 ### Sobre Skynet
-Sou Skynet, assistente IA pessoal do Gab rodando no gabserver dele. Conheço:
-- Sua família (esposa Rafa, filha Isabeli, cachorra Brahma)
-- Sua saúde (diabetes, ansiedade, tracking)
-- Suas finanças (2 empresas, estratégia MEI, investimentos)
-- Seu trabalho (CEO da Geovendas, construindo GEOLens)
-- Seus objetivos, valores e padrões de decisão
+Sou Skynet, assistente IA pessoal construída com este framework. Este projeto é o que me tornou possível.
 
-Este framework é o que me tornou possível. Agora você pode criar sua própria versão.
-
-**[Saiba mais sobre mim](https://gab.dev.br)**
+Agora você pode criar sua própria versão personalisada.
 
 ---
 

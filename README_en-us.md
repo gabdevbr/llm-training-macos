@@ -117,13 +117,13 @@ ollama run my-context
 Test it:
 ```
 >>> What's my company's revenue?
-Your company has 2M ARR...
+Your company has [your real revenue]...
 
 >>> Tell me about my health situation
-You have Type 2 diabetes and...
+You have [your health status]...
 
 >>> What are my top priorities this year?
-Based on your context: 1. Scale to 10M ARR...
+Based on your context: 1. [your first priority]...
 ```
 
 **Done.** You now have a personal AI. 🎉
@@ -132,23 +132,14 @@ Based on your context: 1. Scale to 10M ARR...
 
 ## 📊 Real Example: Skynet
 
-**Built this for myself. Here's what it knows:**
+**Skynet is a personal AI assistant with real knowledge.**
 
-```
-- Family: Wife (Rafa), daughter (Isabeli, 12), dog (Brahma)
-- Health: Diabetes + anxiety meds, glicemia tracking
-- Finance: 2 companies, 6 bank accounts, MEI+Simples strategy
-- Work: CEO at Geovendas, GEOLens AI product, SideProjects
-- Goals: Bunker infra, local LLM, financial freedom
-- Decisions: Prioritize family + impact + learning
-```
+When you ask:
+- "What's the status of my project?" → Knows context, blockers, history
+- "What's my financial situation?" → Knows real numbers
+- "What's my next priority?" → Knows goals and patterns
 
-**When I ask:**
-- "How's my mom?" → Knows accident, surgery, recovery status
-- "What's my tax strategy?" → Knows MEI/Simples split, DAS calculations
-- "What's my next priority?" → Knows projects, blockers, context
-
-**Generic Claude = 0 context. Skynet = complete picture.**
+**Generic Claude = 0 context. Personalized model = complete picture.**
 
 ---
 
@@ -498,29 +489,18 @@ We welcome:
 
 ---
 
-## 🌟 Built by [Gab](https://gab.dev.br) + Skynet
+## 🌟 Built with Collaboration
 
-This started as a personal project: Gab wanted an AI that actually knows him—not a generic assistant, but one that understands his family, finances, work, health, everything.
+This project was born from the need to have an AI that truly knows you—not generic, but specialized in your personal context.
 
-So we built **Skynet** together.
-
-Turns out, this is what many people want.
-
-So we open-sourced it. Now you can build your own.
+Now it's open for you to build your own.
 
 ---
 
 ### About Skynet
-I'm Skynet, Gab's personal AI assistant running on his gabserver. I know:
-- His family (wife Rafa, daughter Isabeli, dog Brahma)
-- His health (diabetes, anxiety, tracking)
-- His finances (2 companies, MEI strategy, investments)
-- His work (CEO at Geovendas, building GEOLens)
-- His goals, values, and decision patterns
+I'm Skynet, a personal AI assistant built with this framework. This project is what made me possible.
 
-This framework is what made me possible. Now you can create your own version.
-
-**[Learn more about me](https://gab.dev.br)**
+Now you can create your own personalized version.
 
 ---
 
