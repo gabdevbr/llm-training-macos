@@ -130,9 +130,9 @@ Based on your context: 1. [your first priority]...
 
 ---
 
-## 📊 Real Example: Skynet
+## 📊 Real Example: Personalized AI
 
-**Skynet is a personal AI assistant with real knowledge.**
+**With fine-tuning, your AI knows your context.**
 
 When you ask:
 - "What's the status of my project?" → Knows context, blockers, history
@@ -345,10 +345,10 @@ See `docs/INTEGRATION.md` for examples.
 
 ## 🎓 Learn & Teach
 
-This started as my personal project (**Skynet**).
+This framework was developed as an open source solution.
 
-Now I'm open-sourcing it so you can:
-1. **Build** your own personal AI
+You can:
+1. **Build** your own personalized AI
 2. **Learn** how fine-tuning works
 3. **Teach** others (templates + docs included)
 
@@ -489,18 +489,11 @@ We welcome:
 
 ---
 
-## 🌟 Built with Collaboration
+## 🌟 Open Source
 
-This project was born from the need to have an AI that truly knows you—not generic, but specialized in your personal context.
+Open source framework to build your own personalized AI with real knowledge of your context.
 
-Now it's open for you to build your own.
 
----
-
-### About Skynet
-I'm Skynet, a personal AI assistant built with this framework. This project is what made me possible.
-
-Now you can create your own personalized version.
 
 ---
 

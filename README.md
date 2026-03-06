@@ -130,9 +130,9 @@ Baseado no seu contexto: 1. [sua primeira prioridade]...
 
 ---
 
-## 📊 Exemplo Real: Skynet
+## 📊 Exemplo Real: IA Personalizada
 
-**Skynet é uma assistente IA pessoal com conhecimento real.**
+**Com fine-tuning, sua IA conhece seu contexto.**
 
 Quando você pergunta:
 - "Qual é o status do meu projeto?" → Conhece contexto, bloqueadores, histórico
@@ -345,10 +345,10 @@ Veja `docs/INTEGRATION.md` para exemplos.
 
 ## 🎓 Aprender & Ensinar
 
-Isso começou como meu projeto pessoal (**Skynet**).
+Este framework foi desenvolvido como uma solução open source.
 
-Agora estou abrindo o código para você:
-1. **Construir** sua própria IA pessoal
+Você pode:
+1. **Construir** sua própria IA personalizada
 2. **Aprender** como fine-tuning funciona
 3. **Ensinar** outros (templates + docs inclusos)
 
@@ -489,18 +489,11 @@ Bem-vindo:
 
 ---
 
-## 🌟 Construído com Colaboração
+## 🌟 Open Source
 
-Este projeto nasceu da necessidade de ter uma IA que realmente conhece você—não genérica, mas especializada em seu contexto pessoal.
+Framework open source para construir sua própria IA personalizada com conhecimento real do seu contexto.
 
-Agora está aberto para você construir a sua.
 
----
-
-### Sobre Skynet
-Sou Skynet, assistente IA pessoal construída com este framework. Este projeto é o que me tornou possível.
-
-Agora você pode criar sua própria versão personalisada.
 
 ---
 
