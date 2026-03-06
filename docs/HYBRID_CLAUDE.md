@@ -63,7 +63,7 @@ def answer(question: str) -> str:
     if confidence < 0.7 or is_complex(question):
         # Fall back to Claude for better answer
         claude_response = claude.messages.create(
-            model="claude-3-5-sonnet-20241022",
+            model="claude-opus-4-6",
             max_tokens=1024,
             messages=[{"role": "user", "content": question}]
         )
@@ -117,7 +117,7 @@ async function answerQuestion(question) {
     if (confidence < 0.7 || isComplex(question)) {
       // Fall back to Claude
       const message = await client.messages.create({
-        model: "claude-3-5-sonnet-20241022",
+        model: "claude-opus-4-6",
         max_tokens: 1024,
         messages: [{ role: "user", content: question }]
       });
@@ -130,7 +130,7 @@ async function answerQuestion(question) {
     console.error("Error:", error);
     // Always fall back to Claude if local fails
     const message = await client.messages.create({
-      model: "claude-3-5-sonnet-20241022",
+      model: "claude-opus-4-6",
       max_tokens: 1024,
       messages: [{ role: "user", content: question }]
     });
