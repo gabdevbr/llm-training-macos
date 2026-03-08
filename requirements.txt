@@ -7,3 +7,7 @@ bitsandbytes==0.43.1
 peft==0.10.0
 trl==0.8.1
 wandb==0.16.6
+
+# === Apple Silicon (MLX) ===
+# Instale separadamente se estiver num Mac M-series:
+# pip install mlx mlx-lm

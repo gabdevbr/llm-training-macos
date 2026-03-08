@@ -94,3 +94,18 @@ echo "4. Run locally:"
 echo "   ollama run my-context"
 echo ""
 echo "For more help, see: docs/GETTING_STARTED.md"
+
+# === MLX (Apple Silicon) ===
+echo ""
+echo "🍎 Detectando Apple Silicon..."
+if [[ $(uname -m) == "arm64" ]] && [[ $(uname -s) == "Darwin" ]]; then
+    echo "   ✅ Apple Silicon detectado!"
+    echo "   Instalando MLX..."
+    pip install mlx mlx-lm
+    echo "   ✅ MLX instalado!"
+    echo ""
+    echo "   Para treinar com MLX:"
+    echo "   python3 scripts/train-mlx.py --dataset dataset.jsonl"
+else
+    echo "   ℹ️ Não é Apple Silicon — usando unsloth/CUDA"
+fi
